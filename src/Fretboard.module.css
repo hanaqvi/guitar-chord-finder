@@ -15,15 +15,11 @@
     position: relative;
     /* Nut */
     border-left: 8px solid #bda06a;
-
-
-    /* 1. Use a gradient to draw the vertical fret wires */
     background-image: linear-gradient(to right,
             transparent 98%,
             #cfd8dc 98%,
             #cfd8dc 100%);
-    /* 2. This controls how many frets show up. 
-     Setting background-size to 20% means 100 / 20 = 5 frets! */
+    /* Controls number of frets */
     background-size: 20% 100%;
 }
 
@@ -50,4 +46,11 @@
     border: none;
     cursor: pointer;
     z-index: 2;
+}
+
+.fingerMarked {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
 }
